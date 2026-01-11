@@ -1,0 +1,134 @@
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(14,17,22,0.75);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+}
+
+.nav_row {
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.nav_brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 220px;
+}
+
+.nav_brandMark {
+    width: 34px;
+    height: 34px;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.03);
+    color: var(--accent);
+}
+
+.nav_brandText {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.nav_brandSub {
+    margin-top: 4px;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.nav_links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav_link {
+    font-size: 14px;
+    color: rgba(245, 241, 232, 0.86);
+    transition: color 0.15s ease;
+}
+
+.nav_link:hover {
+    color: var(--text);
+}
+
+.nav_actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav_burger {
+    display: none;
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.03);
+    cursor: pointer;
+    transition: background 0.15s ease, border-color 0.15s ease
+}
+
+.nav_burger span {
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: rgba(245, 241, 232, 0.85);
+    margin: 4px auto;
+}
+
+.nav_mobile {
+    display: none;
+    border-top: 1px solid var(--border);
+    background: rgba(14, 17, 22, 0.95);
+}
+
+.nav_mobileInner {
+    padding: 16px 20px 22px;
+    display: grid;
+    gap: 10px;
+}
+
+.nav_mobileLink {
+    padding: 10px 8px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    background: rgba(255, 255, 255, 0.03);
+    color: rgba(245, 241, 232, 0.9);
+}
+
+.nav_mobileCta {
+    margin-top: 6px
+}
+
+@media (max-width: 920px) {
+    .nav_links {
+        display: none;
+    }
+
+    .nav_burger {
+        display: inline-block;
+    }
+
+    .nav_mobile {
+        display: block;
+    }
+
+    .nav_mobile.is-open {
+        display: block;
+    }
+
+    .nav_mobile:not(.is-open) {
+        display: none;
+    }
+}

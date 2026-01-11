@@ -1,0 +1,30 @@
+.home_title{
+  margin: 10px 0 0;
+  font-size: 34px;
+}
+
+.home_muted{
+  margin: 14px 0 0;
+  max-width: 620px;
+  color: rgba(245,241,232,0.72);
+  line-height: 1.7;
+}
+
+.home_ctaRow{
+  margin-top: 22px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.home_image{
+  margin-top: 48px;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+.contact {
+  padding: 62px 0;
+  border-bottom: 1px solid var(--border);
+  background: rgba(255,255,255,0.02);
+}

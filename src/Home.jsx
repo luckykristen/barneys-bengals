@@ -3,6 +3,7 @@ import TrustStrip from "./TrustStrip";
 import "./Home.css";
 import KittensTeaser from "./KittensTeaser";
 import { Link } from "react-router-dom";
+import About from "./About";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <TrustStrip />
       <KittensTeaser />
+      <About />
       
 
       <section className="section contact">

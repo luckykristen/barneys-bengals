@@ -3,12 +3,12 @@ import './Navbar.css';
 import { Link } from 'react-router-dom';
 
 const links = [
-    { href: "/", label: "Domů" },
-    { href: "/barneys-bengals/our-cats", label: "Naše kočky" },
-    { href: "/barneys-bengals/kittens", label: "Koťata" },
-    { href: "/barneys-bengals/breed", label: "O plemeni" },
-    { href: "/barneys-bengals/contact", label: "Kontakt" },
-]
+    { to: "/", label: "Domů" },
+    { to: "/our-cats", label: "Naše kočky" },
+    { to: "/kittens", label: "Koťata" },
+    { to: "/breed", label: "O plemeni" },
+    { to: "/contact", label: "Kontakt" },
+];
 
 export default function Navbar() {
     const [open, setOpen] = useState(false);
@@ -26,8 +26,9 @@ export default function Navbar() {
 
                 <nav className="nav_links">
                     {links.map((l) => (
-                    <a key={l.href} className="nav_link" href={l.href}>
-                        {l.label}</a>
+                        <Link key={l.to} to={l.to} className="nav_link">
+                            {l.label}
+                        </Link>
                     ))}
                 </nav>
 

@@ -11,7 +11,7 @@ export const litters = [
         color: "brown spotted",
         status: "available", // available | reserved | sold | keep
         note: "Do chovu dle domluvy",
-        cover: "public/images/kittens/kitten_1.png",
+        cover: "images/kittens/kitten_1.png",
       },
       {
         id: "a-atlas",
@@ -20,7 +20,7 @@ export const litters = [
         color: "brown marbled",
         status: "available",
         note: "Mazlík",
-        cover: "public/images/kittens/kitten_2.png",
+        cover: "images/kittens/kitten_2.png",
       },
       {
         id: "a-aurora",
@@ -28,7 +28,7 @@ export const litters = [
         sex: "female",
         status: "reserved",
         note: "Do chovu dle domluvy",
-        cover: "public/images/kittens/kitten_6.png",
+        cover: "images/kittens/kitten_6.png",
       },
     ],
   },
@@ -44,7 +44,7 @@ export const litters = [
         color: "brown spotted",
         status: "available", // available | reserved | sold | keep
         note: "Do chovu dle domluvy",
-        cover: "public/images/kittens/kitten_4.png",
+        cover: "images/kittens/kitten_4.png",
       },
       {
         id: "b-bridgitte",
@@ -53,7 +53,7 @@ export const litters = [
         color: "brown marbled",
         status: "reserved",
         note: "Mazlík",
-        cover: "public/images/kittens/kitten_3.png",
+        cover: "images/kittens/kitten_3.png",
       },
       {
         id: "b-boby",
@@ -61,7 +61,7 @@ export const litters = [
         sex: "male",
         status: "reserved",
         note: "Do chovu dle domluvy",
-        cover: "public/images/kittens/kitten_5.png",
+        cover: "images/kittens/kitten_5.png",
       },
     ],
   },

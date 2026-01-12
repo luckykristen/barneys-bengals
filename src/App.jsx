@@ -4,6 +4,7 @@ import Navbar from './Navbar.jsx'
 import Home from './Home.jsx'
 import FeaturedKittens from './FeaturedKittens.jsx';
 import { useEffect, useState } from 'react';
+import BreedPage from "./BreedPage.jsx"
 
 
   export default function App() {
@@ -25,6 +26,7 @@ import { useEffect, useState } from 'react';
           <Routes location={location}>
             <Route path="/" element={<Home />} />
             <Route path="/kittens" element={<FeaturedKittens />} />
+            <Route path="/breed" element={<BreedPage />} />
           </Routes>
         </main>
       </>

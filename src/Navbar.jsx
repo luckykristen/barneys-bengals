@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 
 const links = [
     { href: "/", label: "Domů" },
-    { href: "/our-cats", label: "Naše kočky" },
-    { href: "/kittens", label: "Koťata" },
-    { href: "/breed", label: "O plemeni" },
-    { href: "/contact", label: "Kontakt" },
+    { href: "/barneys-bengals/our-cats", label: "Naše kočky" },
+    { href: "/barneys-bengals/kittens", label: "Koťata" },
+    { href: "/barneys-bengals/breed", label: "O plemeni" },
+    { href: "/barneys-bengals/contact", label: "Kontakt" },
 ]
 
 export default function Navbar() {
@@ -19,8 +19,8 @@ export default function Navbar() {
                 <Link className="nav_brand" to="/">
                     <span className="nav_brandMark">✦</span>
                     <span className="nav_brandText">Barney's Bengals
-                        <span className="h-serif">Chovatelská stanice</span>
-                        <span className="nav_brandSub">Bengálské kočky</span>
+                        <span className="h-serif">Breeding Cattery</span>
+                        <span className="nav_brandSub">Bengal Cats</span>
                     </span>
                 </Link>
 

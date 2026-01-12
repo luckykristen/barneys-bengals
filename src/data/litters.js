@@ -59,7 +59,7 @@ export const litters = [
         id: "b-boby",
         name: "Boby",
         sex: "male",
-        status: "available",
+        status: "reserved",
         note: "Do chovu dle domluvy",
         cover: "public/images/kittens/kitten_5.png",
       },

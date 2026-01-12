@@ -23,10 +23,8 @@ export default function Home() {
           </p>
 
           <div className="home_ctaRow">
-            <Link className="btn btn-primary" to="/contact">
-              Napsat zprávu
-            </Link>
-            <a className="btn" href="/kittens">Zobrazit koťata</a>
+            <Link className="btn btn-primary" to="/contact">Napsat zprávu</Link>
+            <Link className="btn" to="/kittens">Zobrazit koťata</Link>
           </div>
         </div>
       </section>

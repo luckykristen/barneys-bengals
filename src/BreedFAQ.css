@@ -1,0 +1,121 @@
+.bfq {
+    position: relative;
+    background:
+        radial-gradient(900px 600px at 12% 15%, rgba(198, 163, 106, 0.08), transparent 60%),
+        radial-gradient(900px 600px at 88% 40%, rgba(255, 255, 255, 0.04), transparent 60%);
+}
+
+.bfq_head {
+    max-width: 760px;
+}
+
+.bfq_title  {
+    margin: 10px 0 0;
+    font-size: 36px;
+    line-height: 1.75;
+}
+
+.bfq_subtitle {
+    margin: 14px 0 0;
+    color: var(--muted);
+    line-height: 1.75;
+}
+
+.bfq_grid {
+    margin-top: 22px;
+    display: grid;
+    gap: 12px;
+}
+
+.bfq_item {
+    border-radius: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
+    box-shadow: 0 16px 50px rgba(0, 0, 0, 0.40);
+    overflow: hidden;
+    position: relative;
+}
+
+.bfq_item::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    background: radial-gradient(320px 220px at 20% 20%, rgba(198, 163, 106, 0.12), transparent 60%);
+    opacity: 0.9;
+    pointer-events: none; 
+}
+
+.bfq_q {
+    width: 100%;
+    text-align: left;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 16px 16px;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+}
+
+.bfq_qText {
+    font-size: 15px;
+    line-height: 1.35;
+}
+
+.bfq_icon {
+    width: 12px;
+    height: 12px;
+    border-right: 2px solid rgba(198, 163, 106, 0.85);
+    border-bottom: 2px solid rgba(198, 163, 106, 0.85);
+    transform: rotate(45deg);
+    transition: transform .25s ease, opacity .25s ease;
+    opacity: 0.85;
+}
+
+.bfq_item.is-open .bfq_icon {
+    transform: rotate(225deg);
+    opacity: 1;
+}
+
+.bfq_aWrap {
+    overflow: hidden;
+    transition: max-height .3s ease;
+}
+
+.bfq_a {
+    margin: 0;
+    padding: 0 16px 16px;
+    color: rgba(246, 241, 231, 0.74);
+    line-height: 1.75;
+    font-size: 14px;
+}
+
+.bfq_cta {
+  margin-top: 18px;
+  border-radius: 22px;
+  border: 1px solid rgba(198,163,106,0.20);
+  background: rgba(198,163,106,0.06);
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.bfq_ctaTitle {
+  font-size: 14px;
+}
+
+.bfq_ctaText {
+  margin-top: 6px;
+  color: rgba(246,241,231,0.70);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+@media (max-width: 720px) {
+  .bfq_title { font-size: 30px; }
+  .bfq_cta { flex-direction: column; align-items: flex-start; }
+}

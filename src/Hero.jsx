@@ -1,6 +1,7 @@
 import "./Hero.css";
 import heroImg from "./assets/bg_photo.png";
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
     const bgRef = useRef(null);
@@ -36,8 +37,8 @@ export default function Hero() {
                 </p>
 
                 <div className="hero_actions">
-                    <a className="btn btn-primary" href="/kittens">Dostupná koťata</a>
-                    <a href="/contact" className="btn">Kontaktujte nás</a>
+                    <Link to="/kittens" className="btn btn-primary">Dostupná koťata</Link>
+                    <Link to="/contact" className="btn">Kontaktujte nás</Link>
                 </div>
             </div>
         </section>

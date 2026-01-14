@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './Navbar.css';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const links = [
     { to: "/", label: "Domů" },
@@ -26,9 +26,9 @@ export default function Navbar() {
 
                 <nav className="nav_links">
                     {links.map((l) => (
-                        <Link key={l.to} to={l.to} className="nav_link">
+                        <NavLink key={l.to} to={l.to} className="nav_link">
                             {l.label}
-                        </Link>
+                        </NavLink>
                     ))}
                 </nav>
 
@@ -51,17 +51,17 @@ export default function Navbar() {
             <div className={`nav_mobile ${open ? "is-open" : ""}`}>
                 <div className="container nav_mobileInner">
                     {links.map((l) => (
-                        <a
-                            key={l.href}
+                        <Link
+                            key={l.to}
                             className="nav_mobileLink"
-                            href={l.href}
-                            onClick={() => setOpen(false)}
+                            to={l.to}
+                            onClick={() => setMenuOpen(false)}
                         >
                             {l.label}
-                        </a>
+                        </Link>
                     ))}
 
-                <a className="btn btn-primary nav_mobileCta" href="/kittens" onClick={() =>setOpen(false)}>Dostupná koťata</a>
+                <Link className="btn btn-primary nav_mobileCta" to="/kittens" onClick={() =>setOpen(false)}>Dostupná koťata</Link>
                 </div>
             </div>
         </header>
